@@ -26,7 +26,7 @@ $('#button_start').click(function () {
 });
 
 function shutdownLights() {
-    $(document).find('span.active').each(function (index) {
+    $(document).find('span.active').each(function () {
         $(this).removeClass('active');
     });
 }
