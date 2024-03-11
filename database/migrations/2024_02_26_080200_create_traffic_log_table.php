@@ -13,7 +13,6 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('traffic_log', function (Blueprint $table) {
-            $table->engine('MyISAM');
             $table->id();
             $table->text('message');
             $table->enum('state', StateMachineContextEnum::values());
